@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:20:{s:48:"template/shop\blue\Goods\goodsInfoPromotion.html";i:1531363025;s:28:"template/shop\blue\base.html";i:1531363025;s:32:"template/shop\blue\urlModel.html";i:1510819885;s:34:"template/shop\blue\controlTop.html";i:1536464590;s:41:"template/shop\blue\controlHeadSerach.html";i:1531363025;s:43:"template/shop\blue\controlHeadGoodType.html";i:1506594225;s:40:"template/shop\blue\controlCommonNav.html";i:1502706001;s:43:"template/shop\blue\controlRightSidebar.html";i:1531363025;s:44:"template/shop\blue\Goods\controlGallery.html";i:1516013571;s:42:"template/shop\blue\Goods\controlVideo.html";i:1531363025;s:46:"template/shop\blue\Goods\controlStoreRank.html";i:1515824515;s:49:"template/shop\blue\Goods\controlGoodEvaluate.html";i:1516430907;s:45:"template/shop\blue\controlCommonPageAjax.html";i:1531363025;s:55:"template/shop\blue\Goods\controlPurchaseConsulting.html";i:1510281310;s:44:"template/shop\blue\controlLoveOrHistory.html";i:1523587556;s:50:"template/shop\blue\Goods\controlGoodsInfoData.html";i:1531363025;s:45:"template/shop\blue\controlBottomLinkHelp.html";i:1536464620;s:37:"template/shop\blue\controlBottom.html";i:1536464794;s:36:"template/shop\blue\controlLogin.html";i:1508897749;s:37:"template/shop\blue\baidu_js_push.html";i:1499844478;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:20:{s:48:"template/shop\blue\Goods\goodsInfoPromotion.html";i:1531363025;s:28:"template/shop\blue\base.html";i:1531363025;s:32:"template/shop\blue\urlModel.html";i:1510819885;s:34:"template/shop\blue\controlTop.html";i:1536464590;s:41:"template/shop\blue\controlHeadSerach.html";i:1531363025;s:43:"template/shop\blue\controlHeadGoodType.html";i:1506594225;s:40:"template/shop\blue\controlCommonNav.html";i:1502706001;s:43:"template/shop\blue\controlRightSidebar.html";i:1531363025;s:44:"template/shop\blue\Goods\controlGallery.html";i:1516013571;s:42:"template/shop\blue\Goods\controlVideo.html";i:1531363025;s:46:"template/shop\blue\Goods\controlStoreRank.html";i:1515824515;s:49:"template/shop\blue\Goods\controlGoodEvaluate.html";i:1516430907;s:45:"template/shop\blue\controlCommonPageAjax.html";i:1531363025;s:55:"template/shop\blue\Goods\controlPurchaseConsulting.html";i:1510281310;s:44:"template/shop\blue\controlLoveOrHistory.html";i:1523587556;s:50:"template/shop\blue\Goods\controlGoodsInfoData.html";i:1536549812;s:45:"template/shop\blue\controlBottomLinkHelp.html";i:1536464620;s:37:"template/shop\blue\controlBottom.html";i:1536464794;s:36:"template/shop\blue\controlLogin.html";i:1508897749;s:37:"template/shop\blue\baidu_js_push.html";i:1499844478;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -2323,9 +2323,12 @@ $().ready(function() {
 			$.msg("<?php echo lang('shall_not_less_than'); ?>!");
 			return;
 		}
+
 		var tag = $(this).attr("data-tag");
 		var image_url = $("#MagnifierWrap .MagnifierMain").find("img").attr("src");
 		var goodsid = <?php echo $goods_info['goods_id']; ?>;
+
+
 		$.cart.add(goodsid, $(".amount-input").val(), {
 			is_sku: true,
 			image_url: image_url,

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:35:"template/shop\blue\Login\login.html";i:1536464901;s:32:"template/shop\blue\urlModel.html";i:1510819885;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:35:"template/shop\blue\Login\login.html";i:1536464923;s:32:"template/shop\blue\urlModel.html";i:1510819885;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -213,7 +213,7 @@ function __IMG(img_path){
 		<p>
 			<span id="copyright_desc" style="font-size: 12px;"></span>
 			<br/>
-			
+
 
 			<p style="display: none;" id="web_gov_record">
                 <a href="javascript:;" target="_blank"><img src="__STATIC__/images/gov_record.png" alt="" style="width: 20px;height: 20px;"><span style="height: 20px;line-height: 20px;display: inline-block;margin-left: 5px;font-size: 12px;"></span></a>

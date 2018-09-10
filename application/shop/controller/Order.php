@@ -47,7 +47,7 @@ class Order extends BaseController
         $integral = request()->post('integral', 0); // 积分
         $goods_sku_list = request()->post('goods_sku_list', ''); // 商品列表
 
-        var_dump($goods_sku_list);die;
+
         $leavemessage = request()->post('leavemessage', ''); // 留言
         $user_money = request()->post("account_balance", 0); // 使用余额
         $pay_type = request()->post("pay_type", 1); // 支付方式

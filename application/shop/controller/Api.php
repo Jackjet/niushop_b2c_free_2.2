@@ -318,7 +318,7 @@ class Api extends BaseController
         $leavemessage = request()->post('leavemessage', ''); // 留言
         $user_money = 0; // 使用余额
         $pay_type = request()->post("pay_type", 1); // 支付方式
-        $buyer_invoice = request()->post("buyer_invoice", ""); // 发票
+        $buyer_invoice = input('companyName').'$'.input('invoiceContent').input('invoiceType'); // 发票
         $pick_up_id = 0; // 自提点
         $shipping_type = request()->post("shipping_type",1); // 配送方式，1：商家配送，2：自提  3：本地配送
         $shipping_time = request()->post("shipping_time", 0); // 配送时间

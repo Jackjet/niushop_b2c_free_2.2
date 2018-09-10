@@ -366,9 +366,12 @@ $().ready(function() {
 			$.msg("{:lang('shall_not_less_than')}!");
 			return;
 		}
+
 		var tag = $(this).attr("data-tag");
 		var image_url = $("#MagnifierWrap .MagnifierMain").find("img").attr("src");
 		var goodsid = {$goods_info.goods_id};
+
+
 		$.cart.add(goodsid, $(".amount-input").val(), {
 			is_sku: true,
 			image_url: image_url,

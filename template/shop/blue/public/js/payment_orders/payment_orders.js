@@ -112,6 +112,8 @@ $(function(){
 			var integral = $("#use_point").val();
 			var pay_type = parseInt($("#paylist li a[class='selected']").attr("data-select"));//支付方式 0：在线支付，4：货到付款
 			var buyer_invoice = getInvoiceContent();//发票
+
+
 			var shipping_type = 1; //配送方式 1商家配送 2用户自提 3本地配送
 			if(getPickupId() > 0){
 				shipping_type = 2;
@@ -137,6 +139,7 @@ $(function(){
 					'distribution_time_out' : distribution_time_out
 				},
 				success : function(res) {
+					return;
 					if (res.code > 0) {
 						$(".btn-jiesuan").css("background-color","#ccc");
 						//如果实际付款金额为0，跳转到个人中心的订单界面中
